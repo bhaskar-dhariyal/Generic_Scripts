@@ -1,15 +1,3 @@
-#**************************************************************
-#*                                                            *
-#*                                                            *
-#* combine_csv.py                                             *
-#*                                                            *
-#* By: Bhaskar Dhariyal <bhaskar.dhariyal@ucdconnect.ie>      *
-#*                                                            *
-#* created: 03/02/20 16:16:34 by Bhaskar Dhariyal             *
-#* updated: 03/02/20 17:57:06 by Bhaskar Dhariyal             *
-#*                                                            *
-#*                                                            *
-#***********************************************************²**
 
 import os
 import glob
@@ -29,8 +17,8 @@ def combine(path, file_name):
     print("Finished combining")
 
     print("Deleting temporary files")
-    #for item in all_filenames:
-    #    os.remove(f"{item}.csv")
+    for item in all_filenames:
+        os.remove(f"{item}.csv")
         
 if __name__ == "__main__":
     combine()
