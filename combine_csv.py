@@ -18,7 +18,7 @@ def combine(path, file_name):
 
     print("Deleting temporary files")
     for item in all_filenames:
-        os.remove(f"{item}.csv")
+        os.remove(item)
         
 if __name__ == "__main__":
     combine()
