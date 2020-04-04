@@ -14,7 +14,7 @@ def combine(path, file_name):
 
     combined_csv = pd.concat([pd.read_csv(f) for f in all_filenames ])
     temp_path = '..'
-    combined_csv.to_csv(os.path.join(temp_path + f"/{file_name}.csv", index=False, encoding='utf-8-sig')
+    combined_csv.to_csv(os.path.join(temp_path + f"/{file_name}.csv", index=False, encoding='utf-8-sig'))
     print("Finished combining")
 
     print("Deleting temporary files")
